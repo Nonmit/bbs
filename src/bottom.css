@@ -1,0 +1,26 @@
+.Bottom{
+    margin-top: 20px;
+    background-color: #fff;
+}
+.Bottom > ul{
+    margin: 0 auto;
+}
+
+.Bottom > ul > li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.Bottom > p{
+    margin: 50px auto;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+}
+/* .Bottom > p::before{
+    content: ' ';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: pink;
+    border-radius: 5px;
+} */

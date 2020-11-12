@@ -1,0 +1,86 @@
+.loginPanel2{
+    max-width: 1060px;
+    min-width: 820px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    background: #E2E2E2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+
+
+.loginPanel2 > form{
+    text-align: left;
+    max-width: 840px;
+    min-width: 620px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.loginPanel2 > form > p{
+    padding: 5px 5px 5px 10px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.loginPanel2 > form > div {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 310px;
+}
+
+.loginPanel2 > form > div > input{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    width: 250px;
+    line-height: 25px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    height: 25px;
+    outline: none;
+}
+.loginPanel2 > form > div > input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.loginPanel2 > form > div > span{
+    display: inline-block;
+    width: 50px;
+    text-align-last: right;
+    padding-right: 5px;
+}
+.loginPanel2 > form > div:last-child{
+    
+    display: flex;
+}
+
+.loginPanel2 > form > div > button{
+    padding: 3px 7px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(#fff, rgba(0, 0, 0, 0.1));
+}
+
+.loginPanel2 > .otherLogin{
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.loginPanel2 > .otherLogin > p{
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

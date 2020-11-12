@@ -1,0 +1,99 @@
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica neue,luxi sans,dejavu sans,segoe ui,hiragino sans gb,microsoft yahei,sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.Top{
+
+    flex-wrap: nowrap;
+    background-color: #fff;
+}
+
+.Top .tools{
+    background-color: #fff;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-items: center;
+}
+.tools > ul{
+    display: flex;
+    text-align: left;
+    flex-direction: row-reverse;
+    
+}
+
+.tools > ul > li{
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+}
+.tools > ul > li{
+    display: inline-block;
+    
+}
+.tools > ul > li > a{
+    text-decoration: none;
+    color: #555;
+}
+
+.Top > .content{
+    display: flex;
+    min-width: 820px;
+    margin: 0 auto;
+    max-width: 1060px;
+    align-items: center;
+}
+.Top > .content > .Logo{
+    width: 100px;
+    height: 50px;
+    background-image: url(img/bbsLogo.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.Top > .content > .search{
+    line-height: 55px;
+    width: 300px;
+    position: relative;
+    
+}
+
+
+.Top > .content > .search > input{
+    outline: none;
+    box-sizing: border-box;
+    
+    border: none;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 2px;
+    padding-left: 25px;
+    height: 30px;
+    width: 280px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.Top > .content > .search > input:focus{
+    border: 1px solid #BCBCC3;
+}
+
+
+.Top > .content > .search > svg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 19px;
+}
+.Top > .content > .tools button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}

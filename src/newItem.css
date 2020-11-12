@@ -1,0 +1,79 @@
+.NewItem{
+    min-width: 820px;
+    margin: 0 auto;
+    max-width: 1060px;
+    text-align: left;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+.NewItem form > div > p{
+    color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) ;
+    line-height: 30px;
+}
+.NewItem form > div > input{
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.NewItem form > div > input:focus{
+    background-color: white;
+}
+.NewItem form > div > textarea{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 300px;
+
+}
+
+.NewItem form > div > textarea:focus{
+    background-color: #fff;
+}
+
+.NewItem form > div > select{
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 35px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+.NewItem form > div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.NewItem form > button{
+    position: relative;
+    left: calc(100% - 80px);
+    padding: 3px 7px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(#fff, rgba(0, 0, 0, 0.1));
+    margin: 5px;
+}
