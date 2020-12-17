@@ -15,6 +15,7 @@ import {
 } from 'react-router-dom';
 import NewItem from './newItem';
 import Register from './register';
+import Right from './Right';
 
 
 
@@ -50,6 +51,7 @@ function App() {
   return (
     <div className="App">
       <Top loginState={login} onLogin={loginSuccess} username={name} />
+      <Right loginState={login} onLogin ={loginSuccess} userInfo = {userInfo}/>
       <Switch>
         <Route path='/' exact>
           <Wrapper indexData={data} loginState={login} onLogin={loginSuccess} userInfo={userInfo} />
@@ -68,6 +70,7 @@ function App() {
         </Route>
       </Switch>
       <Bottom />
+      
     </div>
   );
 }

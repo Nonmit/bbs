@@ -13,7 +13,7 @@ function Top(props){
         history.push('/')
     }
     return(
-        <div className='Top'>
+        <div className='Top' id='top'>
             <div className='content'>
                 <div className='Logo'></div>
                 <div className='search'>

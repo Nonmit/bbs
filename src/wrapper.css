@@ -4,18 +4,20 @@
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
-    background: #E2E2E2;
+    background: rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 185px);
+    
 }
 
 
 .Left{
-    max-width: 840px;
-    min-width: 620px;
+    max-width: 1060px;
+    min-width: 820px;
     flex-grow: 1;
     display: inline-block;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     margin-top: 20px;
-    margin-right: 20px;
+
     border-radius: 5px;
 }
 .Left > .leftNav{
@@ -120,23 +122,27 @@
 }
 
 .Right{
-    width: 200px;
-    display: inline-block;
-    
+    position: fixed;
+    right: 0;
     margin-top: 20px;
 }
 
 .Right > div{
     text-align: left;
     line-height: 30px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
-.Right > .userPanel {
-    
-    
+.Right > .userPanel > div{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+.Right > .userPanel > div > a{
+    display: block;
+    width: 50px;
+    height: 50px;
 }
 .Right > .userPanel > p{
     padding: 5px;
@@ -165,10 +171,6 @@
 }
 .Right > .userPanel button{
 
-    padding:5px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    background-image: linear-gradient(#fff, rgba(0, 0, 0, 0.2));
     cursor: pointer;
     outline: none;
 }
@@ -194,8 +196,8 @@
 }
 
 .Right > .loginPanel > section:first-child{
-    padding: 10px 0 10px 10px;
-    line-height: 50px;
+    padding: 10px 0 0px 10px;
+    xline-height: 50px;
     vertical-align: middle;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -208,10 +210,14 @@
 .Right > .loginPanel > section:first-child > div> img{
     width: 50px;
     height: 50px;
+    xborder-radius: 50px;
 }
 .Right > .loginPanel  span{
+    display: block;
+    line-height: 20px;
     color: rgba(0, 0, 0, 0.6);
-    margin-left: 10px;
+    font-weight: bold;
+    xmargin-left: 10px;
 }
 .Right > .loginPanel > .createTheme{
     text-align: center;
@@ -219,10 +225,69 @@
     font-size: 14px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+.Right > .loginPanel > .createTheme >a {
+    color: rgba(0, 0, 0, 0.6);
+}
 .Right > .loginPanel > p:last-child{
     text-align: center;
     color:rgba(0, 0, 0, 0.6);
     font-size: 14px;
 }
+.Right > .loginPanel > .loginMin{
+    display: none;
+}
+.Right > .toTop{
+    width: 80px;
+    height: 30px;
+    background-image: url(img/top.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    float: right;
+}
+.Right > .toTop > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1310px){
+    .userPanel{
+        width: 50px;
+        height: 50px;
+    }
+    .userPanel > p {
+        display: none;
+    }
+    .Right > .userPanel > div{
+        display: block;
+        background-image: url(img/user.png);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .Right > .loginPanel{
+    }
+    .Right > .loginPanel > *:not(:last-child){
+        display: none;
+    }
+    .Right > .loginPanel  > .loginMin{
+        display: block; 
+        padding: 0; 
+        width: 50px;
+        height: 50px;
+    }
+    .Right > .loginPanel > .loginMin  img{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+    }
+    .Right > .toTop{
+        width: 50px;
+    }
+}
+
+
 
 

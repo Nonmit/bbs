@@ -10,14 +10,15 @@ a {
 .Top{
 
     flex-wrap: nowrap;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .Top .tools{
-    background-color: #fff;
+    background-color: transparent;
     flex-wrap: nowrap;
     flex-grow: 1;
     align-items: center;
+    color: pink;
 }
 .tools > ul{
     display: flex;
@@ -28,6 +29,7 @@ a {
 
 .tools > ul > li{
     margin-left: 10px;
+    font-size: 16px;
 }
 
 ul{
@@ -39,7 +41,7 @@ ul{
 }
 .tools > ul > li > a{
     text-decoration: none;
-    color: #555;
+    color:pink;
 }
 
 .Top > .content{
@@ -52,7 +54,7 @@ ul{
 .Top > .content > .Logo{
     width: 100px;
     height: 50px;
-    background-image: url(img/bbsLogo.jpg);
+    background-image: url(img/logo.png);
     background-size: cover;
     background-position-y: 50%;
 }
@@ -68,8 +70,8 @@ ul{
 .Top > .content > .search > input{
     outline: none;
     box-sizing: border-box;
-    
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    xborder: none;
     background-color: rgba(0, 0, 0, 0.02);
     padding: 2px;
     padding-left: 25px;
@@ -96,4 +98,5 @@ ul{
     border: none;
     font-size: 16px;
     cursor: pointer;
+    color: pink;
 }

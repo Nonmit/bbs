@@ -23,51 +23,39 @@ function Left(props){
         return ans;
     }
 
-    let [status, setStatus] = useState('技术');
+    let [status, setStatus] = useState('七嘴八舌');
     let choice = useRef();
     let [node, setNode] = useState(null);
     useEffect(()=>{
         setNode(choice.current);
-    },[])
+    },[]);
     
     function changeStatus(e){
-        //console.log(choice.current);
-        console.log(node);
-        if(e.target.nodeName == 'LI'){
-            
+        if(e.target.nodeName == 'LI'){ 
             node.classList = '';
             let a = e.target.getAttribute("data-status");
-            if(a != '全部'){
-                setStatus(a);
-            }
+            setStatus(a);
             e.target.classList.add('active');
             setNode(e.target);
         }
     }
-    console.log(props.data);
 
     return(
         <div className='Left'>
             <div className='leftNav'>
                 <ul onClick={changeStatus}>
-                    <li data-status = '技术' className = 'active' ref={choice}>技术</li>
-                    <li data-status = '创意'>创意</li>
-                    <li data-status = '好玩'>好玩</li>
-                    <li data-status = 'Apple'>Apple</li>
-                    <li data-status = '酷工作'>酷工作</li>
-                    <li data-status = '交易'>交易</li>
-                    <li data-status = '城市'>城市</li>
-                    <li data-status = '问与答'>问与答</li>
-                    <li data-status = '最热'>最热</li>
+                    <li data-status = '七嘴八舌' className = 'active' ref={choice}>七嘴八舌</li>
+                    <li data-status = '日常记录'>日常记录</li>
+                    <li data-status = '经验分享'>经验分享</li>
+                    <li data-status = '技术总结'>技术总结</li>
                     <li data-status = '全部'>全部</li>
-                    <li data-status = 'R2'>R2</li>
                 </ul>
             </div>
 
             <ul className='detialPost'>
             {
                 props.data &&
-                props.data.filter(it => it.category == status).map(it=>{
+                props.data.filter(it => { if(status == '全部') return true; return it.category == status}).map(it=>{
                     return(
                         <li key={it.id}>
                             <img src= {it.avatar}/>

@@ -1,8 +1,15 @@
+@import '~antd/dist/antd.css';
+
 .App {
   min-width: 820px;
   margin:0 auto;
   text-align: center;
   background-color: #E2E2E2;
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .App-logo {
@@ -30,6 +37,33 @@
 .App-link {
   color: #61dafb;
 }
+* {
+  scroll-behavior: smooth;
+}
+
+.buttonStyle{
+    padding: 3px 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 25px;
+    border: 2px solid rgba(21,216,128, 0.8);
+    background-color: transparent;
+    color: rgba(21,216,128, 0.8);
+    
+}
+
+.buttonStyle:hover{
+  text-shadow: 0 0 4px rgba(21,216,128, 0.5);
+  box-shadow: 0 0 4px rgba(21,216,128, 0.5);;
+}
+input{
+  background-color: transparent;
+}
+
+
 
 @keyframes App-logo-spin {
   from {

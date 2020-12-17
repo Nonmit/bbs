@@ -13,7 +13,7 @@ function Wrapper(props){
         <div>
             <div className='Wrapper'>
                 <Left data = {props.indexData}/>
-                <Right loginState = {props.loginState} onLogin = {props.onLogin} userInfo = {props.userInfo}/>            
+                {/* <Right loginState = {props.loginState} onLogin = {props.onLogin} userInfo = {props.userInfo}/>             */}
             </div>
             
             
